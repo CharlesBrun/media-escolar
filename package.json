@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "media-escolar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "run": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charles Viegas",
+  "license": "ISC",
+  "description": ""
+}
