@@ -3,6 +3,7 @@ const prompt = require("prompt-sync")();
 function cadastrarAluno(alunos, quantidade){
     quantidade = parseInt(prompt("Digite quantos alunos gostaria de cadastrar? "));
 
+    //Validar entrada
     if(isNaN(quantidade) || quantidade < 0){
         console.log("Valor invalido!");
         return
@@ -43,6 +44,7 @@ function cadastrarDados(alunos){
             
             while (numeroDeMaterias < 3 || chaveMaterias) {
                 const nomeMateria = prompt("");
+                //Verifica se o usuario digitou sair ou se o numero de materias e maior que 3
                 if (nomeMateria.toLowerCase() === "sair" && numeroDeMaterias >= 3) {
                     chaveMaterias = false;
                 } else if (nomeMateria.toLowerCase() === "sair" && numeroDeMaterias < 3) {
@@ -64,6 +66,7 @@ function cadastrarDados(alunos){
                     } while (isNaN(faltas) || faltas < 0);
                     materia.faltas = faltas;
 
+                    //Verifica e cadastra as notas
                     console.log("Faça o cadastro das 3 notas!")
                     for (let index = 0; index < 3; index++) {
                         let nota;
